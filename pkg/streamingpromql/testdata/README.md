@@ -2,7 +2,7 @@ This directory contains sets of test cases used to test Mimir's query engine (MQ
 
 There are four subdirectories, each with a different purpose:
 
-- `fuzz`: contains test data and seed queries used specifically for fuzz testing MQE. 
+- `fuzz`: contains test data and seed queries used specifically for fuzz testing MQE.
   These are used by `FuzzQuery` to generate and validate a wide variety of PromQL queries, helping catch edge cases and inconsistencies between MQE and Prometheus query engines.
 - `ours`: test cases we have created. These are run against MQE by `TestOurTestCases`, and also run against Prometheus' engine to confirm they are valid test cases.
 - `ours-only`: same as above, but the comparison against Prometheus' engine is skipped.
